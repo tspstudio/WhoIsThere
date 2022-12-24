@@ -349,4 +349,32 @@ host = socket.gethostbyname(socket.gethostname())
 
 - debug : If ```True```, all HTTP logs will be visible in console.
 
+### Connecting WhoIsThere to the world!
+
+If you want to make your page public, there's very **very** **VEERY** many ways to do it.
+
+So, i'll show you two most popular ways.
+
+## Way 1.
+
+1. Install [ngrok](https://dashboard.ngrok.com/get-started/setup) and follow steps on these site.
+
+2. Run ```ngrok http (your web server port)``` and copy link displayed on the screen.
+
+To access your page, use copied link.
+
+## Way 2
+
+1. If you don't have static ip address, buy it on your internet provider.
+
+2. Go to your router settings using [this](192.168.0.1) or [this](192.168.1.1).
+
+If not working, search your router local ip or look bottom of your router.
+
+3. Search how to open port on your router and do it.
+
+4. Disable firewall on your device.
+
+To access your page, get your public ip on [2ip.io](https://2ip.io/). Your site now on your ip.
+
 # Have fun with Who Is There!
