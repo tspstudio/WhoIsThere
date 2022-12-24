@@ -127,7 +127,7 @@ def start_server():
 	app = make_app()
 	app.listen(port=optns.port,address=optns.host)
 	print(f"{G}Sucess")
-	print(f"\n{Y}[LOG] {W}Caiting for client interact... Ctrl+Break for exit.")
+	print(f"\n{Y}[LOG] {W}Waiting for client interact... Ctrl+Break for exit.")
 	tornado.ioloop.IOLoop.current().start()
 
 def check_for_update():
