@@ -60,6 +60,7 @@ else
     if [ "$OSTYPE" == 'linux-android' ]; then
         termux_install
     else
+    
         debian_install
     fi
 fi
