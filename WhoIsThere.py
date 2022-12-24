@@ -10,7 +10,7 @@ import requests
 from packaging import version
 
 selfVersion = "0.0.2"
-script_path = path.dirname(path.realpath(__file__))
+script_path = os.path.dirname(os.path.realpath(__file__))
 
 R = '\033[31m'
 G = '\033[32m'
@@ -156,7 +156,7 @@ def main():
 	print(f"{G}{logo}{Y}\n")
 	check_for_update()
 	print(f"\n{Y}[LOG] {W}Choose one template: \n")
-	with open(f"{script_path}pages/pages.json","r") as f:
+	with open(f"{script_path}/pages/pages.json","r") as f:
 		data = json.loads(f.read())
 		pages = data["pages"]
 		pagesCount = len(pages)
