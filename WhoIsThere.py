@@ -10,6 +10,7 @@ import requests
 from packaging import version
 
 selfVersion = "0.0.2"
+script_path = path.dirname(path.realpath(__file__))
 
 R = '\033[31m'
 G = '\033[32m'
@@ -18,7 +19,7 @@ W = '\033[0m'
 Y = '\033[33m'
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-p', '--port', type=int, default=8080, help='Web server port [ Default : 8080 ]')
+parser.add_argument('-p', '--port', type=int, default=8080, help='Web server port. Default: 8080')
 parser.add_argument('-u', '--update', action='store_true', help='Check for updates')
 parser.add_argument('-v', '--version', action='store_true', help='Prints version')
 
@@ -115,7 +116,7 @@ class App(tornado.web.Application):
 
 class MainHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.render(f"pages\\{directory}\\index.html")
+		self.render(f"{script_path}/pages/{directory}/index.html")
 	def post(self):
 		data = self.get_argument("userData")
 		parse_data(data)
@@ -141,7 +142,7 @@ def check_for_update():
 
 def main():
 	if print_v:
-		print(version)
+		print(selfVersion)
 		quit()
 	if chk_upd:
 		check_for_update()
@@ -155,7 +156,7 @@ def main():
 	print(f"{G}{logo}{Y}\n")
 	check_for_update()
 	print(f"\n{Y}[LOG] {W}Choose one template: \n")
-	with open("pages\\pages.json","r") as f:
+	with open(f"{script_path}pages/pages.json","r") as f:
 		data = json.loads(f.read())
 		pages = data["pages"]
 		pagesCount = len(pages)
@@ -176,7 +177,7 @@ def main():
 	directory = page["dir"]
 	print(f"\n{Y}[LOG] {W}Loading {name} page...")
 	try:
-		f = open(f"pages\\{directory}\\index.html", "r")
+		f = open(f"{script_path}/pages/{directory}/index.html", "r")
 	except FileNotFoundError:
 		print(f"\n{R}[X] Main file not found!")
 		input()
