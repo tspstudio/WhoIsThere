@@ -23,6 +23,7 @@ Update 0.0.3 finnaly out!
 
 - Default structure of template.
 
+## P.S. Still trying to fix problem not receiving IPon ngrok.
 
 <a href="https://github.com/tspstudio/WhoIsThere#getting-started">
     <img src="https://dabuttonfactory.com/button.png?t=Getting Started&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=099400">
