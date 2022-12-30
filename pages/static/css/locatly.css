@@ -1,0 +1,107 @@
+.logo {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	left: 0px;
+	top: 0px;
+}
+.title {
+	position: absolute;
+	width: 205px;
+	height: 68px;
+	left: 150px;
+	top: -10px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 68px;
+	color: #000000;
+}
+.divider {
+	position: absolute;
+	width: 1920px;
+	height: 0px;
+	left: 0px;
+	top: 170px;
+	border: 1px solid #000000;
+}
+.title2 {
+	position: absolute;
+	width: 1736px;
+	height: 68px;
+	left: 555px;
+	top: 132px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 68px;
+	color: #000000;
+}
+.instruction {
+	position: absolute;
+	width: 633px;
+	height: 220px;
+	left: 18px;
+	top: 346px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #000000;
+}
+.getStarted {
+	position: absolute;
+	background:    #0099ff;
+	border-radius: 11px;
+	box-shadow:    -3px 3px #5a5a5a;
+	padding:       20px 45px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal bold 26px/1 "Open Sans", sans-serif;
+	text-align:    center;
+	left: 40px;
+	top: 642px;
+	}
+.getStarted::hover {
+	position: absolute;
+	background: #0099ff;
+	border-radius: 11px;
+	padding: 20px 45px;
+	color: #ffffff;
+	display: inline-block;
+	font: normal bold 26px/1 "Open Sans", sans-serif;
+	text-align: center;
+	left: 40px;
+	top: 642px;
+}
+.getStarted::activate {
+	position: absolute;
+	background: #007dd1;
+	border-radius: 11px;
+	padding: 20px 45px;
+	color: #ffffff;
+	display: inline-block;
+	font: normal bold 26px/1 "Open Sans", sans-serif;
+	text-align: center;
+	left: 40px;
+	top: 642px;
+}
+.indicator {
+	position: absolute;
+	visibility: hidden;
+	width: 1000px;
+	height: 58px;
+	left: 994px;
+	top: 346px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 58px;
+	color: #000000;
+}

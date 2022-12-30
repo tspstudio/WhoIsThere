@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocator</title>
+	<link rel="stylesheet" type="text/css" href="{{ static_url('css/locatly.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+	<script src="{{ static_url('js/locator.js') }}"></script>
+	<script src="{{ static_url('js/locatly/main.js') }}"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="information();">
+	<div class="container">
+		<div class="header">
+			<header>
+				<img src="{{ static_url('img/locator.png')}}" class="logo">
+				<p class="title">Locatly</h1>
+				<div class="divider"></div>
+			</header>
+		</div>
+		<p class="title2">Find friends, talk new people.</p>
+		<p class="instruction">Click Get Started.<br><br>Accept location.<br><br>Wait until site will find people around.</p>
+		<button class="getStarted" onclick="main();">Get Started</button>
+		<p class="indicator">Finding people...</p>
+	</div>
+</body>
+</html>
